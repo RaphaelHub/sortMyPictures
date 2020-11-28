@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# date prefix that is used for constructing the new dir name
+# (pattern is used for the command date)
+PREFIXDATEPATTERN="%Y%m%d"
+
+# date field that is used with identify (ImageMagick) for naming
+EXIFDATE="EXIF:DateTimeOriginal"
