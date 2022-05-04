@@ -36,7 +36,7 @@ COUNTER=0;
 
 for i in "$dir"/*;
 do
-    DATE=$(identify -format %[EXIF:DateTime] "$i" | awk '{print $1}')
+    DATE=$(identify -format %[EXIF:DateTimeOriginal] "$i" | awk '{print $1}')
     FILE=$(realpath "$i")
     printf "$FILE ... $DATE\n"
 
